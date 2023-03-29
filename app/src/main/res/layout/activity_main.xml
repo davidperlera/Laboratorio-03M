@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/cash_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big2_gap"
+        android:text="@string/money_count_text"
+        android:textSize="55sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/init_text_view" />
+
+    <TextView
+        android:id="@+id/init_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/money_count"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/fivecentes_image_view"
+        android:layout_width="120dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="@dimen/big2_gap"
+        app:layout_constraintEnd_toStartOf="@+id/tencents_image_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cash_text_view"
+        android:src="@drawable/five_cents" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="398dp" />
+
+    <ImageView
+        android:id="@+id/dollar_image_view"
+        android:layout_width="120dp"
+        android:layout_height="126dp"
+        android:layout_marginTop="@dimen/big2_gap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/quarer_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tencents_text_view"
+        android:src="@drawable/one_dollar" />
+
+    <ImageView
+        android:id="@+id/tencents_image_view"
+        android:layout_width="120dp"
+        android:layout_height="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fivecentes_image_view"
+        app:layout_constraintTop_toTopOf="@+id/fivecentes_image_view"
+        android:src="@drawable/ten_cents" />
+
+    <ImageView
+        android:id="@+id/quarer_image_view"
+        android:layout_width="120dp"
+        android:layout_height="126dp"
+        app:layout_constraintEnd_toStartOf="@+id/dollar_image_view"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/dollar_image_view"
+        android:src="@drawable/quarter" />
+
+    <TextView
+        android:id="@+id/fivecents_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big2_gap"
+        android:text="@string/five_cents_text"
+        app:layout_constraintEnd_toEndOf="@+id/fivecentes_image_view"
+        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintStart_toStartOf="@+id/fivecentes_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/fivecentes_image_view" />
+
+    <TextView
+        android:id="@+id/tencents_text_view"
+        android:layout_width="41dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="@dimen/big2_gap"
+        android:text="@string/tencents_text"
+        app:layout_constraintEnd_toEndOf="@+id/tencents_image_view"
+        app:layout_constraintStart_toStartOf="@+id/tencents_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/tencents_image_view" />
+
+    <TextView
+        android:id="@+id/quarer_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big2_gap"
+        android:text="@string/quarer_text"
+        app:layout_constraintEnd_toEndOf="@+id/quarer_image_view"
+        app:layout_constraintStart_toStartOf="@+id/quarer_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/quarer_image_view" />
+
+    <TextView
+        android:id="@+id/dollar_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/big2_gap"
+        android:text="@string/dollar_text"
+        app:layout_constraintEnd_toEndOf="@+id/dollar_image_view"
+        app:layout_constraintStart_toStartOf="@+id/dollar_image_view"
+        app:layout_constraintTop_toBottomOf="@+id/dollar_image_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
